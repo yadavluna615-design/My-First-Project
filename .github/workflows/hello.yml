@@ -1,0 +1,12 @@
+name: My First GitHub Action
+on: push
+jobs:
+    say-hello:
+       runs-on:ubuntu-latest
+       steps:
+          -name:print a greeting
+            run:echo "Hello from Github Action! This is ran automatically."
+
+
+           -name: Show current data
+            run:date
